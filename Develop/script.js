@@ -33,4 +33,48 @@ var choseLength = function() {
     }
   };
 
+  // upperCase function
+var upperCase = function() {
 
+   var upperConfirm = window.confirm("Would you like to include upper case characters?");
+  
+    if(upperConfirm) {
+      lengthElem = lengthElem.concat(upperElem);
+    }
+  };
+
+
+  // lowerCase function
+var lowerCase = function() {
+  var lowerConfirm = window.confirm("Would you like to include lower case characters?");
+
+  if(lowerConfirm){
+    lengthElem = lengthElem.concat(lowerElem) ;
+  }
+};
+
+// number function
+var numberCase = function() {
+ 
+  var numberConfirm = window.confirm("Would you like to include numbers?");
+  
+  if (numberConfirm) {
+    lengthElem = lengthElem.concat(numberElem);
+  
+    
+  }
+};
+
+
+// create symbolChar() function
+var symbolCase = function() {
+  var symbolConfirm = window.confirm("Would you like to include symbol characters?");
+
+  if (symbolConfirm) {
+    lengthElem = lengthElem.concat(symbolElem);
+  
+  } else {
+    window.alert("You should choose at least one character from the criterias");
+    return lowerCase(), upperCase(), numberCase(), symbolCase();
+  }
+};
