@@ -65,6 +65,22 @@ var symbolFunction = function() {
   }
 };
 
+// create numberFunction
+var numberFunction = function(){
+  var numberConfirm = window.confirm("Do you want to include numbers?");
+  // Add numbers to the password
+  if (numberConfirm) {
+    allowedCharacters = allowedCharacters.concat(numbersChar);
+    console.log(allowedCharacters)
+
+    // Add "else" to restart to comply with password parameters
+  } else {
+    window.alert("You must choose at least one of the criterias.");
+    return lowerFunction(), upperFunction(), symbolFunction(), numberFunction();
+    
+  }
+};
+
 // create the generatePassword function
 var generatePassword = function(){
   // add all created functions with conditinal statements
