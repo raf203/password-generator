@@ -45,6 +45,26 @@ var upperFunction = function(){
    }
  };
 
+ // create lowerFunction
+var lowerFunction = function() {
+  var lowerConfirm = window.confirm("Do you want to include lower case characters?");
+  // Add lowercase to the password
+  if(lowerConfirm){
+     allowedCharacters = allowedCharacters.concat(lowerCaseChar) ;
+     console.log(allowedCharacters)
+  }
+};
+
+// create symbolFunction
+var symbolFunction = function() {
+  var symbolConfirm = window.confirm("Do you want to include symbol characters?");
+  // Add symbols to the password
+  if (symbolConfirm) {
+    allowedCharacters = allowedCharacters.concat(symbolsChar);
+    console.log(allowedCharacters)
+  }
+};
+
 // create the generatePassword function
 var generatePassword = function(){
   // add all created functions with conditinal statements
