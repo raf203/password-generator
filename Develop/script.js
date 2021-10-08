@@ -35,6 +35,16 @@ var passwordLength = function(){
   }
 };
 
+// create upperFunction
+var upperFunction = function(){
+  var upperConfirm = window.confirm("Do you want to include upper case characters?");
+  // Add upercase to the password
+   if(upperConfirm) {
+     allowedCharacters = allowedCharacters.concat(upperCaseChar);
+     console.log(allowedCharacters)
+   }
+ };
+
 // create the generatePassword function
 var generatePassword = function(){
   // add all created functions with conditinal statements
