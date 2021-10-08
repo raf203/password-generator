@@ -7,6 +7,14 @@ var lowerCaseChar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o"
 var numbersChar = ["0","1","2","3","4","5","6","7","8","9"];
 var symbolsChar = ["`","~","!","@","#","$","%","^","&","*","(",")","-","_","+","=","{","}","[","]",":",";","'","<",">","?"];
 
+// create randomNumber function 
+var randomNumber = function () {
+  var item = allowedCharacters[Math.floor(Math.random() *  allowedCharacters.length)]
+  
+  return item;
+};
+
+
 // create passwordLength function 
 var passwordLength = function(){
   var length = window.prompt("Choose password length between 8 to 128 characters. Enter the number.");
