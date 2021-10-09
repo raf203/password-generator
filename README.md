@@ -1,1 +1,30 @@
-# Password Generator Starter Code
+# Challenge: Password Generator Starter Code
+
+## User Story
+
+AS AN employee with access to sensitive data
+I WANT to randomly generate a password that meets certain criteria
+SO THAT I can create a strong password that provides greater security
+
+## Acceptance Criteria completed
+
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+
+## URL:https://raf203.github.io/password-generator/
+
+<img width="1440" alt="Screen Shot 2021-10-09 at 12 13 06 PM" src="https://user-images.githubusercontent.com/89607465/136671560-532d60e7-520a-4148-8e30-f53ffe77d613.png">
+<img width="1440" alt="Screen Shot 2021-10-09 at 12 13 15 PM" src="https://user-images.githubusercontent.com/89607465/136671570-802a9536-bed7-4004-b2a2-901550eba0cb.png">
